@@ -1,0 +1,29 @@
+{
+  "name": "pi-web-math",
+  "version": "0.1.0",
+  "description": "LaTeX math for chat and Markdown previews in PI WEB",
+  "type": "module",
+  "files": ["dist/browser"],
+  "keywords": ["pi-web.dev-plugin", "latex", "math", "katex"],
+  "scripts": {
+    "build": "tsc --noEmit && node scripts/build.mjs",
+    "test": "node --test",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@jmfederico/pi-web": "1.202611.4",
+    "esbuild": "0.28.2",
+    "katex": "0.19.1",
+    "marked": "18.2.1",
+    "typescript": "6.0.3"
+  },
+  "piWeb": {
+    "plugins": [
+      {
+        "id": "math",
+        "browserRoot": "dist/browser",
+        "module": "dist/browser/index.js"
+      }
+    ]
+  }
+}

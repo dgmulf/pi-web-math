@@ -1,0 +1,16 @@
+.pi-web-math-display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.pi-web-math-display > .katex-display {
+  width: max-content;
+  min-width: 100%;
+  margin: 0.65em 0;
+}
+
+.pi-web-math-source {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
