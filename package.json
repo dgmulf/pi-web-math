@@ -2,9 +2,18 @@
   "name": "pi-web-math",
   "version": "0.1.0",
   "description": "LaTeX math for chat and Markdown previews in PI WEB",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgmulf/pi-web-math.git"
+  },
+  "homepage": "https://github.com/dgmulf/pi-web-math#readme",
   "type": "module",
   "files": ["dist/browser"],
-  "keywords": ["pi-web.dev-plugin", "latex", "math", "katex"],
+  "keywords": ["pi-web.dev-plugin", "pi-package", "latex", "math", "katex"],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsc --noEmit && node scripts/build.mjs",
     "test": "node --test",

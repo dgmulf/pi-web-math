@@ -11,9 +11,17 @@ A browser-only PI WEB plugin that renders LaTeX in conversations and the Files M
 
 Display formulas can span lines. For best results, put display equations on their own lines. Inline dollars must touch the formula on both sides; use `\$` for a literal dollar when the text could be mistaken for math. Code stays literal. Incomplete equations are left to Markdown, and unsupported or invalid TeX falls back to readable source.
 
-## Install locally
+## Install from npm
 
-Requires PI WEB browser plugin API v5 with `markdown-rendering@1` (tested on PI WEB `1.202611.4`). To build from source, use Node.js 24+ and npm:
+Requires PI WEB browser plugin API v5 with `markdown-rendering@1` (tested on PI WEB `1.202611.4`).
+
+1. Open **Settings → Pi packages** and install `npm:pi-web-math`.
+2. Check **Settings → PI WEB plugins** for **LaTeX Math**, enabled by default.
+3. Reload the browser. No session-daemon restart is needed.
+
+## Build from source
+
+Use Node.js 24+ and npm:
 
 ```sh
 npm ci
